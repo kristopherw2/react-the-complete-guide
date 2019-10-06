@@ -13,18 +13,16 @@ class App extends Component {
         userName: event.target.value
       })
     }
-  render (){
+  render() {
   return (
     <div className="App">
       <UserOutput 
       username={this.state.userName}/>
-      <UserOutput       
-      username={this.state.userName} />
       <UserInput
       changed={this.usernameChangeHandler}
       username={this.state.userName} />
     </div>
-   );
+  );
   }
 }
 
